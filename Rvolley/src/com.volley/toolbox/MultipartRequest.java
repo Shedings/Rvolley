@@ -14,10 +14,11 @@ import static com.volley.toolbox.MultipartContent.*;
 
 /**
  * Created by Shedings on 2015/7/20.
- * http://www.2cto.com/kf/201412/365803.html;
  */
 public class MultipartRequest extends Request<String> {
     private MultipartEntity mMultiPartEntity = new MultipartEntity();
+//    private MultipartEntity mMultiPartEntity = new MultipartEntity("UTF-8");//这里可以设置Http上传文件和提交参数的编码,默认为UTF-8;
+
     private final Response.Listener<String> mListener;
     private Map<String, String> headMap = new HashMap<String, String>();
 
