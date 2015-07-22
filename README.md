@@ -1,10 +1,16 @@
 # Rvolley
 
-重写Volley库，1：post请求：添加一个key 多个value值提交
+重写Volley库
 
-              2：post请求：添加支持Head头信息提交
+1：导入Rvolley  兼容 eclipse Or androidStudio
 
-              3：添加文件上传功能支持 及 二进制流数据上传支持
+              get请求： 支持Map添加Get参数提交
+
+              post请求：添加一个key 多个value值提交
+
+              post请求：添加支持Head头信息提交
+
+              post请求：添加文件上传功能支持 及 二进制流数据上传支持
 
 # 
 
@@ -13,25 +19,41 @@
 package first.com.myapplication;
 
 import android.app.Activity;
+
 import android.graphics.Bitmap;
+
 import android.graphics.PixelFormat;
+
 import android.graphics.drawable.BitmapDrawable;
+
 import android.graphics.drawable.Drawable;
+
 import android.os.Bundle;
+
 import android.util.Log;
 
 import com.volley.AuthFailureError;
+
 import com.volley.Request;
+
 import com.volley.procotol.HttpTools;
+
 import com.volley.procotol.ResponseProtocol;
+
 import com.volley.toolbox.MultipartContent;
+
 import com.volley.toolbox.Volley;
 
 import java.io.ByteArrayOutputStream;
+
 import java.io.File;
+
 import java.util.HashMap;
+
 import java.util.Hashtable;
+
 import java.util.Locale;
+
 import java.util.Map;
 
 
