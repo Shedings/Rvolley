@@ -3,6 +3,20 @@
 重写Volley库
 
 1：导入Rvolley  兼容 eclipse Or androidStudio
+2：如果是androidStudio的小伙伴们  
+
+更改：compileSdkVersion 22           你要编译的sdk版本
+      buildToolsVersion "22.0.1"     你要用哪一个buiTools版本编译
+
+在你的项目工程 
+
+build.gradle dependencies 中添加  compile project(':Rvolley')   
+
+
+更改完成  重新  Build --> Clean Project  
+
+elcispe的小伙伴们  直接 导入 此类库  然后 add此类库工程 到你的项目工程中 就可以调用了
+
 
               get请求： 支持Map添加Get参数提交
 
