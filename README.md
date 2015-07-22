@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         sHttpTools = HttpTools.getHttpTools(Volley.newRequestQueue(getApplicationContext()));
-        login("18257106739", "123456", "8d893ab659e94b3d359eed8806e7f949", 0, new HttpTools.HttpListener() {
+        login("PhoneNum", "PassWord", "deviceToken", 0, new HttpTools.HttpListener() {
             @Override
             public void onSuccessResponse(ResponseProtocol sProtocol) {//ResponseProtocol  这个类为自己封装的Http请求类 具体可以自己到 HttpTools里面自己定义和封装;
                 System.out.println(sProtocol.getComplete());//打印Http请求的结果;
